@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: n8n
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_HOST
+        value: dpg-d4a00f15pdvs73dt96k0-a.oregon-postgres.render.com
+      - key: DB_POSTGRESDB_PORT
+        value: 5432
+      - key: DB_POSTGRESDB_DATABASE
+        value: n8n_db_4fab
+      - key: DB_POSTGRESDB_USER
+        value: n8n_db_4fab_user
+      - key: DB_POSTGRESDB_PASSWORD
+        value: ilc8SZELE0XYUgKgFHwfAos67r4m5FlN
+      - key: DB_POSTGRESDB_SCHEMA
+        value: public
+      - key: N8N_HOST
+        value: n8n-jyc4.onrender.com
+      - key: N8N_PROTOCOL
+        value: https
+      - key: WEBHOOK_URL
+        value: https://n8n-jyc4.onrender.com
+      - key: N8N_ENCRYPTION_KEY
+        value: a9f2c8e1b4d7f0a3e6b9c2d5f8e1a4b7c0d3e6f9a2b5c8d1e4f7a0b3c6d9e2f5
